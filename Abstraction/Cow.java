@@ -1,0 +1,9 @@
+package Abstraction;
+
+class Cow extends Animal {
+
+    @Override
+    public void makeNoise(){
+        System.out.println("Meow!");
+    }
+}
