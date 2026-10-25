@@ -5,53 +5,42 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        double balance = 1000.00;
         int choice;
 
         do {
-            System.out.println("\n1. Check Balance");
-            System.out.println("2. Deposit Money");
-            System.out.println("3. Exit");
+            System.out.println("\n=== FDS NIGHT STUDY ===");
+            System.out.println("1. Add a note");
+            System.out.println("2. View all notes");
+            System.out.println("3. Review database concepts");
+            System.out.println("4. Exit");
 
             System.out.print("Enter choice: ");
             choice = sc.nextInt();
 
-            switch (choice) {
+            System.out.println("You selected: " + choice);
 
+            switch (choice) {
                 case 1:
-                    System.out.printfln(""
-                     break;
-                case 3:
-                    System.out.println("T")   "Current balance: %.2f%n", balance
-                    );
+                    System.out.println("Add a note feature coming soon!");
                     break;
 
                 case 2:
-                    System.out.print("Enter deposit amount: ");
-                    double amount = sc.nextDouble();
-
-                    if (amount > 0) {
-                        balance = balance + amount;
-
-                        System.out.printf(
-                            "New balance: %.2f%n", balance
-                        );
-                    } else {
-                        System.out.println(
-                            "Invalid deposit amount!"
-                        );
-                    }
+                    System.out.println("View notes feature coming soon!");
                     break;
 
                 case 3:
-                    System.out.println("Thank you!");
+                    System.out.println("Database review feature coming soon!");
+                    break;
+
+                case 4:
+                    System.out.println("Good night, database bestie!");
                     break;
 
                 default:
-                    System.out.println("Invalid choice!");
+                    System.out.println("Invalid choice. Try again!");
             }
 
-        } while (choice != 3);
+        } while (choice != 4);
 
         sc.close();
     }
